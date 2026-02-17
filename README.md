@@ -1,18 +1,16 @@
 # @bpmn-io/svg-to-image
 
-> Utility for generating images from SVG markup
-
-This package provides a simple utility to convert SVG markup into PNG or JPEG images. It uses [canvg](https://github.com/canvg/canvg) to render SVG elements onto a canvas and then exports them as image data URLs or Blobs.
+Converts an SVG to an image with decent quality.
 
 ## Usage
 
 ```javascript
-import { generateImageFromSvg } from 'svg-to-image';
+import { svgToImage } from 'svg-to-image';
 
 const svg = '<svg>...</svg>';
 
 // Generate PNG
-const result = await generateImageFromSvg(svg, {
+const result = await svgToImage(svg, {
     imageType: 'png',
     outputFormat: 'blob'
 });
@@ -28,6 +26,9 @@ npm install
 npm run all
 ```
 
+## How it works
+
+This package uses [canvg](https://github.com/canvg/canvg) to render SVG elements onto a canvas and then exports them as image data URLs or Blobs.
 
 ## License
 
