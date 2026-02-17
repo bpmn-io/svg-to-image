@@ -1,5 +1,5 @@
 {
-  "name": "svg-to-image",
+  "name": "@bpmn-io/svg-to-image",
   "version": "0.1.0",
   "description": "Utility for generating images from SVG markup",
   "type": "module",

@@ -1,4 +1,4 @@
-# svg-to-image
+# @bpmn-io/svg-to-image
 
 > Utility for generating images from SVG markup
 
