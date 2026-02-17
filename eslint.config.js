@@ -42,14 +42,5 @@ export default [
       ...config,
       files: files.test
     };
-  }),
-  {
-    languageOptions: {
-      globals: {
-        require: false,
-        sinon: false
-      }
-    },
-    files: files.test
-  }
+  })
 ];

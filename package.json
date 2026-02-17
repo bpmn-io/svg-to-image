@@ -3,22 +3,19 @@
   "version": "0.1.0",
   "description": "Utility for generating images from SVG markup",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "files": [
-    "dist"
+    "lib"
   ],
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./lib/index.js",
     "./package.json": "./package.json"
   },
   "scripts": {
-    "all": "run-s lint test build",
+    "all": "run-s lint test",
     "lint": "eslint .",
     "test": "karma start karma.config.cjs",
-    "dev": "npm test -- --auto-watch --no-single-run",
-    "build": "rollup -c",
-    "build:watch": "rollup -cw",
-    "prepare": "run-s build"
+    "dev": "npm test -- --auto-watch --no-single-run"
   },
   "repository": {
     "type": "git",
@@ -47,13 +44,9 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.26.10",
-    "@rollup/plugin-commonjs": "^29.0.0",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^16.0.3",
     "babel-loader": "^10.0.0",
     "babel-plugin-istanbul": "^7.0.1",
     "chai": "^6.2.2",
-    "cross-env": "^10.1.0",
     "eslint": "^9.39.2",
     "eslint-plugin-bpmn-io": "^2.2.0",
     "karma": "^6.4.4",
@@ -67,9 +60,6 @@
     "npm-run-all2": "^8.0.4",
     "puppeteer": "^24.37.2",
     "raw-loader": "^4.0.2",
-    "rollup": "^4.57.1",
-    "sinon": "^21.0.1",
-    "sinon-chai": "^4.0.1",
     "webpack": "^5.105.0"
   },
   "dependencies": {
