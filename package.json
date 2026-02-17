@@ -4,11 +4,15 @@
   "description": "Utility for generating images from SVG markup",
   "type": "module",
   "main": "./dist/index.js",
+  "types": "./lib/index.d.ts",
   "files": [
     "lib"
   ],
   "exports": {
-    ".": "./lib/index.js",
+    ".": {
+      "default": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
