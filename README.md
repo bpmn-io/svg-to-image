@@ -28,7 +28,7 @@ npm run all
 
 ## How it works
 
-This package uses [canvg](https://github.com/canvg/canvg) to render SVG elements onto a canvas and then exports them as image data URLs or Blobs.
+This package uses [canvg](https://github.com/canvg/canvg) to render SVG elements onto a canvas and then exports them as image data URLs or [image blobs](https://developer.mozilla.org/en-US/docs/Web/API/Blob).
 
 ## License
 
