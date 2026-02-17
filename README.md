@@ -1,5 +1,7 @@
 # @bpmn-io/svg-to-image
 
+[![CI](https://github.com/bpmn-io/svg-to-image/actions/workflows/CI.yml/badge.svg)](https://github.com/bpmn-io/svg-to-image/actions/workflows/CI.yml)
+
 Converts an SVG to an image with decent quality.
 
 ## Usage
