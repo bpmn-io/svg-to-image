@@ -7,7 +7,7 @@ Converts an SVG to an image with decent quality.
 ## Usage
 
 ```javascript
-import { svgToImage } from 'svg-to-image';
+import { svgToImage } from '@bpmn-io/svg-to-image';
 
 const svg = '<svg>...</svg>';
 
